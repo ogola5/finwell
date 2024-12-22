@@ -5,39 +5,40 @@ import QuoteButton from './QuoteButton';
 import InvestmentAreas from './Investment';
 import { Link } from 'react-router-dom';
 import Chatbot from './Chatbot'; // Adjust the path based on your file structure
-// import Dashboard1 from '../chat/components/pages/da'
+
 const Dashboard = () => {
   // State for holding all transactions (both income and expense)
   const [transactions, setTransactions] = useState([]);
   const [loading, setLoading] = useState(true);
   const [userId, setUserId] = useState(null);
- // Retrieve userId from localStorage when the component mounts
-   useEffect(() => {
-     const user = JSON.parse(localStorage.getItem('user'));
-     if (user) {
-       setUserId(user.id);  // Set userId from localStorage
-     }
-   }, []);
- 
+
+  // Retrieve userId from localStorage when the component mounts
+  useEffect(() => {
+    const user = JSON.parse(localStorage.getItem('user'));
+    if (user) {
+      setUserId(user.id);  // Set userId from localStorage
+    }
+  }, []);
+  
   // Fetch income and expenses data from API
   useEffect(() => {
     const fetchTransactions = async () => {
       try {
         let incomeData = [];
         let expenseData = [];
-  
+
         if (userId) {
           // Fetch income transactions
           const incomeResponse = await fetch(`http://localhost:5000/api/income/${userId}`);
           incomeData = await incomeResponse.json();
           console.log('Fetched Income:', incomeData);  // Log the fetched income data
-  
+
           // Fetch expense transactions
           const expenseResponse = await fetch(`http://localhost:5000/api/expenses/user/${userId}`);
           expenseData = await expenseResponse.json();
           console.log('Fetched Expenses:', expenseData);  // Log the fetched expense data
         }
-  
+
         // Combine both income and expense data
         const combinedTransactions = [
           ...incomeData.map(item => ({
@@ -55,10 +56,10 @@ const Dashboard = () => {
             description: item.description,
           }))
         ];
-  
+
         // Sort combined transactions by date (latest first)
         const sortedTransactions = combinedTransactions.sort((a, b) => b.date - a.date);
-  
+
         // Set transactions state
         setTransactions(sortedTransactions);
         setLoading(false);
@@ -67,10 +68,10 @@ const Dashboard = () => {
         setLoading(false);
       }
     };
-  
+
     fetchTransactions();
   }, [userId]);
-  
+
   // Calculate total income and expenses
   const totalIncome = transactions
     .filter((transaction) => transaction.type === 'Income')
@@ -109,7 +110,18 @@ const Dashboard = () => {
           <p className="summary-value">+0.00% this month</p>
         </div>
       </div>
+
+      {/* <Link to="#">
+        <button className="add-expense">
+          <FaPlusCircle /> Insights
+        </button>
+      </Link> */}
+        <button className="invest" onClick={() => window.location.href = 'https://chat-rouge-ten.vercel.app/'}>
+          <FaHandsHelping /> Invest
+        </button>
+
       
+
       <Chatbot />
 
       {/* Quote and Investment Sections */}
@@ -135,14 +147,13 @@ const Dashboard = () => {
           </button>
         </Link>
         <Link to="/wallet">
-        <button className="add-wallet">
-          <FaWallet /> Add Wallet
-        </button>
+          <button className="add-wallet">
+            <FaWallet /> Add Wallet
+          </button>
         </Link>
         <button className="invest" onClick={() => window.location.href = 'https://7fah5-7aaaa-aaaah-qpxvq-cai.icp0.io/'}>
           <FaHandsHelping /> Invest
         </button>
-
       </div>
 
       {/* Transactions Table */}
