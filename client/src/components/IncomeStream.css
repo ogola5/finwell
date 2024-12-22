@@ -1,0 +1,123 @@
+/* IncomeStream.css */
+
+/* General container styling for the IncomeStream page */
+.income-stream-container {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f9;
+}
+
+/* Heading styling */
+h1, h2, h3 {
+  color: #333;
+  text-align: center;
+}
+
+/* Form styling for income stream creation */
+.income-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.income-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.income-form input,
+.income-form select {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.income-form input[type="date"] {
+  padding: 6px;
+}
+
+.income-form input[type="checkbox"] {
+  margin-left: 5px;
+}
+
+/* Submit button styling */
+.submit-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+/* Styling for the list of income streams */
+.income-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.income-item {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.income-item p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.delete-btn:hover {
+  background-color: #e03e3e;
+}
+
+/* Mobile responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .income-form {
+    padding: 15px;
+  }
+
+  .submit-btn {
+    width: auto;
+  }
+
+  .income-item {
+    padding: 10px;
+  }
+
+  .delete-btn {
+    padding: 6px 10px;
+  }
+}

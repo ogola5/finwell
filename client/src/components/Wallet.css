@@ -1,0 +1,110 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Wallet Container */
+.wallet-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    color: #333;
+}
+
+/* Header Styles */
+h2, h3, h4 {
+    color: #007bff;
+}
+
+/* Add Account Form */
+.add-account {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-account select,
+.add-account input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-account button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-account button:disabled {
+    background-color: #cccccc;
+}
+
+.add-account button:hover {
+    background-color: #0056b3;
+}
+
+/* Accounts List */
+.accounts {
+    margin-bottom: 2rem;
+}
+
+.accounts div {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.accounts button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+.accounts button:hover {
+    background-color: #0056b3;
+}
+
+/* Total Balance Section */
+.total-balance {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* Icon Styles */
+button i {
+    margin-right: 8px;
+}
+
+select, input {
+    font-size: 1rem;
+}
+
+/* Style for buttons when selected action is active */
+button.active {
+    background-color: #28a745;
+}

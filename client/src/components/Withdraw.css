@@ -1,0 +1,76 @@
+/* Main container for the Withdraw component */
+.withdraw-container {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* Dropdown select */
+.withdraw-select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Input field */
+.withdraw-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button */
+.withdraw-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #28a745;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.withdraw-button i {
+    font-size: 18px;
+}
+
+/* Button when loading */
+.withdraw-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Error message */
+.withdraw-error {
+    color: #ff4d4f;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .withdraw-container {
+        padding: 15px;
+    }
+
+    .withdraw-select, .withdraw-input {
+        font-size: 14px;
+    }
+
+    .withdraw-button {
+        font-size: 14px;
+    }
+}

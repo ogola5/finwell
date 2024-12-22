@@ -1,0 +1,140 @@
+.dashboard {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  background-color: #f4f8fb;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.dashboard-header h2 {
+  font-size: 32px;
+  color: #333;
+}
+
+.dashboard-header p {
+  font-size: 18px;
+  color: #666;
+}
+
+.dashboard-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+  padding-left: 15%;
+  align-items: center;
+}
+
+.summary-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.summary-card h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.summary-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.summary-icon {
+  font-size: 30px;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.action-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-expense {
+  background-color: #ff9800;
+  color: white;
+}
+.income-source {
+  background-color: #ff00dd;
+  color: white;
+}
+
+.add-wallet {
+  background-color: #2196f3;
+  color: white;
+}
+.invest {
+  background-color: #1ca727;
+  color: white;
+}
+
+.action-buttons button:hover {
+  opacity: 0.8;
+}
+
+.transactions {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.transactions h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+.transactions p {
+  font-size: 16px;
+  color: #666;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.transactions-table th, .transactions-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.transactions-table th {
+  background-color: #f4f8fb;
+}
+
+.transactions-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.income {
+  color: #4caf50;
+}
+
+.expense {
+  color: #f44336;
+}
+
+.Quote {
+  text-align: center;
+}

@@ -1,0 +1,86 @@
+.analytics {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  background-color: #f4f8fb;
+  color: #333;
+}
+
+.analytics h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.summary, .income-summary, .time-summary {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.category-summary p {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.category-summary p strong {
+  font-weight: bold;
+}
+
+.category-summary p svg {
+  margin-right: 10px;
+  color: #4caf50;
+}
+
+/* New styles for charts */
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  flex-direction: column;
+}
+
+.chart-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.chart-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.income-summary {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.income-summary h3 {
+  margin-bottom: 20px;
+}
+
+.income-summary p {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.income-summary p strong {
+  font-weight: bold;
+}
+
+.income-summary p svg {
+  margin-right: 10px;
+  color: #2196f3;
+}

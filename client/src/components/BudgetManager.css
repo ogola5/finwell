@@ -1,0 +1,154 @@
+/* Updated BudgetManager.css */
+
+/* General Container Styles */
+.budget-manager-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.budget-manager-header {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2d3e50;
+  margin-bottom: 30px;
+}
+
+/* Column Layout for Budget and Analytics */
+.budget-manager-content {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.budget-manager-section {
+  width: 48%;
+}
+
+/* Analytics Styles */
+.analytics-container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.analytics-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2d3e50;
+  margin-bottom: 20px;
+}
+
+.analytics-content {
+  background-color: #f1f3f5;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Form and Inputs */
+.budget-manager-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.budget-manager-input,
+.budget-manager-select {
+  padding: 14px;
+  font-size: 1.1rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  background-color: #f1f3f5;
+  transition: all 0.3s ease;
+}
+
+.budget-manager-input:focus,
+.budget-manager-select:focus {
+  outline: none;
+  border-color: #80bdff;
+  background-color: white;
+}
+
+/* Buttons */
+.budget-manager-button,
+.budget-manager-button-secondary {
+  padding: 14px 20px;
+  font-size: 1.1rem;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.budget-manager-button:hover,
+.budget-manager-button-secondary:hover {
+  background-color: #45a049;
+}
+
+/* Budget List Styles */
+.budget-manager-budgets-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.budget-manager-budget-item {
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.budget-manager-budget-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.budget-manager-category-list {
+  list-style-type: none;
+  padding-left: 20px;
+  font-size: 1rem;
+  color: #495057;
+}
+
+.budget-manager-category-item {
+  padding: 8px 0;
+}
+
+.budget-manager-budget-item h4 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #343a40;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .budget-manager-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .budget-manager-content {
+    flex-direction: column;
+  }
+
+  .budget-manager-section {
+    width: 100%;
+  }
+}

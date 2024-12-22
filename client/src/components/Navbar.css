@@ -1,0 +1,43 @@
+/* Responsive Hamburger Menu and Dropdown */
+
+/* Hamburger Menu Icon - Show on Small Screens */
+.menu-icon {
+  display: none; /* Hide by default */
+  font-size: 1.8rem;
+  color: #333;
+  cursor: pointer;
+  position: absolute;
+  top: 15px; /* Adjust vertical position */
+  right: 20px; /* Adjust horizontal position */
+  z-index: 1000; /* Ensure the icon stays on top */
+}
+
+/* Navbar Links - Responsive for Smaller Screens */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Show hamburger menu icon */
+  }
+
+  .navbar-links {
+    display: none; /* Hide links by default */
+    position: absolute;
+    top: 60px; /* Dropdown position below the navbar */
+    right: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    flex-direction: column; /* Stack links vertically */
+    width: 150px;
+    z-index: 999; /* Ensure dropdown stays above content */
+  }
+
+  .navbar-links.show {
+    display: flex; /* Show links when active */
+  }
+
+  .navbar-links li {
+    margin: 10px 0; /* Add spacing for vertical links */
+    text-align: center;
+  }
+}
